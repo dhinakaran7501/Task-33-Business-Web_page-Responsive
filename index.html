@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap With SASS</title>
+
+    <!-- BOOTSTRAP ICON CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- SCSS CSS FILE -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#top-header>
+    <!-- Header Area STARTED -->
+    <header id=" header-area">
+    <section id="top-header" class="bg-primary  py-2  d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-white pt-2">
+                    <h6><i class="bi bi-phone px-2"></i>+123 456 789</h6>
+                </div>
+                <div class="col-md-4 text-white pt-2 text-center">
+                    <h6><i class="bi bi-envelope px-2"></i>username@yourdomain.com</h6>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#" class="btn btn-primary" style="background-color: #3b5998;"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-primary" style="background-color: #1da1f2;"><i
+                            class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-primary" style="background-color: #c32aa3;"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-primary" style="background-color: #0a66c2;"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar STARTED -->
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SASS Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#header-area">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-Area">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service-area">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team-area">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analysis-area">Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus-area">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar STARTED -->
+    </header>
+    <!-- Header Area END -->
+
+    <!-- Hero Area STARTED -->
+    <section id="hero-Area" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h3>Let's Learn Coding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt dolore voluptatem
+                        perspiciatis saepe rerum nam architecto ad, expedita delectus ullam obcaecati corporis quasi ea
+                        quis, accusantium animi vero doloribus.</p>
+                    <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Join
+                        Now</a>
+                </div>
+
+                <!-- Modal STARTED -->
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Join Now</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Fill out this form</p>
+                                <form>
+                                    <div class="mb-3 form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                            required>
+                                        <label for="name" class="col-form-label">Your Name:</label>
+                                    </div>
+                                    <div class="mb-3 form-floating">
+                                        <input type="email" class="form-control" name="" id="email"
+                                            placeholder="Enter Your Email" required>
+                                        <label for="email" class="col-form-label">Your Email:</label>
+                                    </div>
+                                    <div class="mb-3 form-floating">
+                                        <input type="password" class="form-control" name="" id="password"
+                                            placeholder="Enter Your Password" required>
+                                        <label for="password" class="col-form-label">Message:</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-secondary text-white"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal END -->
+
+                <div class="col-md-6">
+                    <img src="img/coder.svg" class="image-fluid" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Area END -->
+
+    <!-- Service Section STARTED -->
+    <section id="service-area" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2>Our Service</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci error maiores perspiciatis
+                        autem incidunt nulla quidem sunt odio velit eligendi nam, ipsa ipsam optio in accusamus aliquam
+                        inventore.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-4 mb-2 h-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-gear m-auto d-block btn btn-outline-primary pt-2 my-3"></i>
+                            <h3>Easy to use</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nisi. Sequi eligendi
+                                tempore similique atque quidem harum, quo excepturi? Quis odio, temporibus excepturi
+                                quibusdam tenetur nostrum molestiae assumenda ullam voluptas?</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-graph-up-arrow m-auto d-block btn btn-outline-primary pt-2 my-3"></i>
+                            <h3>Awesome Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nisi. Sequi eligendi
+                                tempore similique atque quidem harum, quo excepturi? Quis odio, temporibus excepturi
+                                quibusdam tenetur nostrum molestiae assumenda ullam voluptas?</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2 h-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-people-fill m-auto d-block btn btn-outline-primary pt-2 my-3"></i>
+                            <h3>Easy to Customize</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nisi. Sequi eligendi
+                                tempore similique atque quidem harum, quo excepturi? Quis odio, temporibus excepturi
+                                quibusdam tenetur nostrum molestiae assumenda ullam voluptas?</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section END -->
+
+    <!-- Analysis Section STARTED -->
+    <section id="analysis-area" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <img src="img/Investing.svg" class="image-fluid" alt="image">
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h3>Analysis for Business Opportunities</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt dolore voluptatem
+                        perspiciatis saepe rerum nam architecto ad, expedita delectus ullam obcaecati corporis quasi ea
+                        quis, accusantium animi vero doloribus.</p>
+                    <a href="#" class="btn btn-primary mb-4">See More Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Analysis Section END-->
+
+    <!-- Team Area Section STARTED -->
+    <section id="team-area" class="py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2>Our Team</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci error maiores perspiciatis
+                        autem incidunt nulla quidem sunt odio velit eligendi nam, ipsa ipsam optio in accusamus aliquam
+                        inventore.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-4 mb-2 h-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/team_01.jpg" class="image-fluid" alt="image">
+                            <h4 class="mt-2">Mahi Clark</h4>
+                            <p>Web Designer</p>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/team_02.jpg" class="image-fluid" alt="image">
+                            <h4 class="mt-2">David Clark</h4>
+                            <p>Graphics Designer</p>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 h-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/team_03.jpg" class="image-fluid" alt="image">
+                            <h4 class="mt-2">Jone Clark</h4>
+                            <p>Web Developer</p>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Area Section END -->
+
+
+    <!-- FAQ Section STARTED -->
+    <section id="faq-area" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/faq.svg" class="img-fluid mb-3" alt="image">
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h2>FAQ Area</h2>
+
+                    <!-- Accordin Sec Started -->
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion One
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Two
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Three
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordin Sec End -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section END -->
+
+    <!-- Contact Us STARTED -->
+    <section id="contactus-area" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Contact Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto, inventore debitis
+                        repudiandae ipsam doloremque?</p>
+                    <div class="row my-3 justify-self-between">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Enter Your First Name" class="form-control">
+                        </div>
+                        <div class="col-md-6" id="lastname">
+                            <input type="text" placeholder="Enter Your Last Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Subject" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"
+                                placeholder="Enter Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472742.3908349857!2d-79.43497746435995!3d43.84155728192171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1688232687114!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us END -->
+
+    <!-- Footer STARTED -->
+    <footer class="pt-4 pb-2 bg-secondary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright © 2021 All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer STARTED -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
